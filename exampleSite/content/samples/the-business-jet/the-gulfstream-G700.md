@@ -32,9 +32,9 @@ More information about General Dynamics is available at generaldynamics.com.
 
 Here are three images from the press release.
 
-https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Gulfstream-G700-Grand-Suite-Lavatory.20220908.jpg
+![Image 1](https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Gulfstream-G700-Grand-Suite-Lavatory.20220908.jpg)
 
-https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Gulfstream-G700-Grand-Suite.20220908.jpg
+![Image 2](https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Gulfstream-G700-Grand-Suite.20220908.jpg)
 
-https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Second-Gulfstream-G700-Test-Aircraft-Interior.20220908.jpg
+![Image 3](https://applegate-paul.mo.cloudinary.net/https://storage.googleapis.com/cloudinarymedia/images/Second-Gulfstream-G700-Test-Aircraft-Interior.20220908.jpg)
 
