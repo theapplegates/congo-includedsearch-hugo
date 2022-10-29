@@ -1,12 +1,89 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-<script type="text/javascript">
-  algoliasearchNetlify({
-	appId: 'RFPDTRDAKZ',
-	apiKey: '468dc807e9ce20084dca363d97a7e58c',
-	siteId: '542b2e3b-b62f-4b6a-a226-40b14ececafe',
-	branch: 'main',
-	selector: 'div#search',
-  });
-</script>
-<div id="search"></div>
+({
+  appId: 'G3F09E0J4C',
+  apiKey: '0c0fe5b9aeaca1a8b69f926a72f3d9d6',
+  indexPrefix: 'crawler_',
+  rateLimit: 8,
+  maxDepth: 10,
+  startUrls: ['https://clinquant-sawine-b38fbf.netlify.app'],
+  renderJavaScript: false,
+  sitemaps: [],
+  ignoreCanonicalTo: false,
+  discoveryPatterns: ['https://https://clinquant-sawine-b38fbf.netlify.app/**'],
+  actions: [
+    {
+      indexName: 'nextjs',
+      pathsToMatch: ['https://https://clinquant-sawine-b38fbf.netlify.app/**'],
+      recordExtractor: ({ helpers }) => {
+        return helpers.docsearch({
+          recordProps: {
+            lvl1: ['header h1', 'article h1', 'main h1', 'h1', 'head > title'],
+            content: ['article p, article li', 'main p, main li', 'p, li'],
+            lvl0: {
+              selectors: '',
+              defaultValue: 'Documentation',
+            },
+            lvl2: ['article h2', 'main h2', 'h2'],
+            lvl3: ['article h3', 'main h3', 'h3'],
+            lvl4: ['article h4', 'main h4', 'h4'],
+            lvl5: ['article h5', 'main h5', 'h5'],
+            lvl6: ['article h6', 'main h6', 'h6'],
+          },
+          aggregateContent: true,
+          recordVersion: 'v3',
+        });
+      },
+    },
+  ],
+  initialIndexSettings: {
+    nextjs: {
+      attributesForFaceting: ['type', 'lang'],
+      attributesToRetrieve: [
+        'hierarchy',
+        'content',
+        'anchor',
+        'url',
+        'url_without_anchor',
+        'type',
+      ],
+      attributesToHighlight: ['hierarchy', 'content'],
+      attributesToSnippet: ['content:10'],
+      camelCaseAttributes: ['hierarchy', 'content'],
+      searchableAttributes: [
+        'unordered(hierarchy.lvl0)',
+        'unordered(hierarchy.lvl1)',
+        'unordered(hierarchy.lvl2)',
+        'unordered(hierarchy.lvl3)',
+        'unordered(hierarchy.lvl4)',
+        'unordered(hierarchy.lvl5)',
+        'unordered(hierarchy.lvl6)',
+        'content',
+      ],
+      distinct: true,
+      attributeForDistinct: 'url',
+      customRanking: [
+        'desc(weight.pageRank)',
+        'desc(weight.level)',
+        'asc(weight.position)',
+      ],
+      ranking: [
+        'words',
+        'filters',
+        'typo',
+        'attribute',
+        'proximity',
+        'exact',
+        'custom',
+      ],
+      highlightPreTag: '<span class="algolia-docsearch-suggestion--highlight">',
+      highlightPostTag: '</span>',
+      minWordSizefor1Typo: 3,
+      minWordSizefor2Typos: 7,
+      allowTyposOnNumericTokens: false,
+      minProximity: 1,
+      ignorePlurals: true,
+      advancedSyntax: true,
+      attributeCriteriaComputedByMinProximity: true,
+      removeWordsIfNoResults: 'allOptional',
+    },
+  },
+});
