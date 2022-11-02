@@ -26,7 +26,7 @@ Additional features available on the G700 include configurations of up to five l
 
 NOTE TO EDITORS
 
-![Cheese](https://applegate-paul.mo.cloudinary.net/zoom/https://storage.googleapis.com/cloudinarymedia/images/cheese.jpg)
+![Cheese](https://applegate-paul.mo.cloudinary.net/cheese.jpg)
 
 Inspired by the belief that aviation could fuel business growth, Gulfstream Aerospace Corp. invented the first purpose-built business aircraft, the Gulfstream I, which first flew in 1958. Today, more than 3,000 aircraft are in service around the world. Together with parent company General Dynamics, Gulfstream consistently invests in the future, dedicating resources to researching and developing innovative new aircraft, technologies and services. With a fleet that includes the super-midsize Gulfstream G280, the high-performing Gulfstream G650 and Gulfstream G650ER, and a next-generation family of aircraft including the all-new Gulfstream G400, the award-winning Gulfstream G500 and Gulfstream G600, the flagship Gulfstream G700 and the ultralong-range Gulfstream G800, Gulfstream offers an aircraft for every mission. All are backed by Gulfstream’s Customer Support network and its worldwide team. Visit our website at gulfstream.com. 
 
